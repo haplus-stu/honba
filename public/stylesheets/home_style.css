@@ -1,0 +1,94 @@
+.nav_container {
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 8rem;
+  color: #7a7050;
+  background-color: #F3F3F3;
+  border-bottom: solid #cfcfcf;
+}
+
+.nav_container .l_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav_container .l_nav .nav_item {
+  display: inline-block;
+  margin: 4vh 2vw;
+  text-decoration: none;
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+.nav_container .l_nav .nav_item a {
+  color: #7a7050;
+  text-decoration: none;
+}
+
+#title {
+  float: left;
+  text-align: center;
+  margin: 2vh 0 2vh 3vw;
+  font-size: 2.2rem;
+  color: #7a7050;
+}
+
+#title #sub_title {
+  font-size: .8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.explain {
+  margin-top: 10vh;
+  color: #4e4125;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.link {
+  margin: 20vh auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link .link_page {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  color: #4e4125;
+}
+
+.section {
+  color: #4e4125;
+  text-align: center;
+  margin: 15vh 0;
+}
+/*# sourceMappingURL=home_style.css.map */

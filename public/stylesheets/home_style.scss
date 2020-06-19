@@ -1,0 +1,43 @@
+@import './nav';
+@import './title';
+$str_color:#7a7050;
+$str_color2:#4e4125;
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.explain{
+    margin-top: 10vh;
+    color: $str_color2;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.link{
+    margin: 20vh auto;
+    //height: calc(50% - 100%/2);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    .link_page{
+        padding:  0 2rem;
+        font-size: 1.5rem;
+        color: $str_color2;
+    }
+}
+
+.section{
+    color:$str_color2;
+    text-align: center;
+    margin: 15vh 0;
+}
