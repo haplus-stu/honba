@@ -25,6 +25,14 @@
                 color:#7a7050;
                 text-decoration: none;
             }
+            #home::before{
+                font-family: "Font Awesome 5 Pro";
+                content: "\f015";
+                font-size: 2em;
+                @media screen and (max-width:1199px){
+                    font-size: 1.5em;
+                }
+            }
         }
     }
   }

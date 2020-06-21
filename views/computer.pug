@@ -4,19 +4,16 @@ html(lang="ja")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="/stylesheets/style.css")
+    script(src="https://kit.fontawesome.com/17db368173.js" crossorigin="anonymous")
+
     title= title
   body
     div(class="nav_container")
-      a(href="/")
-        h1(id='title') HonBa!
-          p(id='sub_title') ~ほんのさがしば~
+      h1(id='title') HonBa!
+        p(id='sub_title') ~ほんのさがしば~
       ul(class="l_nav")
         li(class="nav_item") 
-          a(href="/")
-            |Home
-        li(class="nav_item") 
-          a(href="/About") 
-            |About
+          a(href="/" id='home')
     div(id='contents')
         div(id="output_csv")
             h1( id="section_title")

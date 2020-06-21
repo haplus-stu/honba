@@ -16,10 +16,11 @@ a{
 .infomation{
     
     .news{
-        margin: 0 auto;
+        margin: 0 auto 5vh auto;
         p{
             color: $str_color2;
             text-align: center;
+            font-size: 18px;
         }
     }
 }
@@ -31,23 +32,29 @@ a{
     color: $str_color2;
     text-align: center;
     font-size: 1.3rem;
+    @media screen and (max-width: 1199px){
+        padding: 0 22px;
+    }
 }
 
 .link{
-    margin: 20vh auto;
-    //height: calc(50% - 100%/2);
+    margin: 8vh auto;
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     .link_page{
         padding:  0 2rem;
         font-size: 1.5rem;
         color: $str_color2;
+        @media screen and(max-width:1199px){
+            float: left;
+        }
     }
 }
 
 .section{
     color:$str_color2;
     text-align: center;
-    margin: 15vh 0;
+    margin: 15vh 0 5vh 0;
 }

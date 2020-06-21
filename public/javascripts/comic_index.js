@@ -59,7 +59,6 @@ function disp_html() {
         console.log(all_data_of_book[i]);
     }
     var tb = document.getElementById('view_info');
-    tb.classList.add('clearfix');
     tb.setAttribute('id', 'view_info');
     var title_th = document.createElement('th');
     var date_th = document.createElement('th');

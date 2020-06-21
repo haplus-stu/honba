@@ -1,10 +1,12 @@
 @import "./nav";
 @import './title';
+$bp-small: 1199px;
 $str_color:#7a7050;
 $str_color2:#4e4125;
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 li{
     list-style: none;
@@ -14,19 +16,13 @@ a{
     color: $str_color2;
     text-decoration: none;
 }
-
-body{
-    // background-color:  rgb(105, 189, 131);
-    //color: #8a8061;
-}
-
 td{
     border: solid 1px black;
 }
 
 #contents{
-    width: 700px;
-    margin: 5rem auto 0 auto;
+    width: 100%;
+    margin: 5rem auto;
 }
 
 #output_csv{
@@ -37,8 +33,11 @@ td{
     }
 }
 
-.clearfix{
-    display: block;
+#section_title{
+    @media screen and (max-width:1199px) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 .contents{
@@ -46,8 +45,12 @@ td{
 }
 
 #view_info{
-    padding: 7px 0 5px;
-    margin: 0 auto 3rem auto;
+    @media screen and (max-width:1199px) {
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    width:  calc(100vw / 2);
     border-collapse: collapse;
     th,tr{
         border: solid 1px black;
