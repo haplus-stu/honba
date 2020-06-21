@@ -8,14 +8,18 @@ html(lang="ja")
 
     title= title
   body
-    div(class="nav_container")
-      h1(id='title') HonBa!
-        p(id='sub_title') ~ほんのさがしば~
-      ul(class="l_nav")
-        li(class="nav_item") 
-          a(href="/" id='home')
-    div(id='contents')
-        div(id="output_csv")
-            h1( id="section_title")
-            table(id='view_info')
-    script(src="javascripts/comptuer_index.js")
+    div(id='st_wrapper')
+      div(class="nav_container")
+        h1(id='title') HonBa!
+          p(id='sub_title') ~ほんのさがしば~
+        ul(class="l_nav")
+          li(class="nav_item") 
+            a(href="/" id='home')
+      div(id='contents')
+          div(id="output_csv")
+              h1( id="section_title")
+              table(id='view_info')
+      footer
+        p(id='copy')
+      script(src='/javascripts/home.js')
+      script(src="javascripts/comptuer_index.js")
