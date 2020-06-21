@@ -60,6 +60,15 @@ a {
   text-decoration: none;
 }
 
+.infomation .news {
+  margin: 0 auto;
+}
+
+.infomation .news p {
+  color: #4e4125;
+  text-align: center;
+}
+
 .explain {
   margin-top: 10vh;
   color: #4e4125;
