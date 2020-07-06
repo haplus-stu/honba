@@ -1,7 +1,9 @@
 doctype html
-html
+html(prefix="og: http://ogp.me/ns#")
   head
-    title= title
+    title= title  
+    meta(property="og:image" content="/images/rogo.png")
+    meta(property="og:description" content="書籍の発売日最新情報を一覧化するサイトです")
     link(rel='stylesheet', href='/stylesheets/home_style.css')
     script(src="https://kit.fontawesome.com/17db368173.js" crossorigin="anonymous")
   body
@@ -29,6 +31,7 @@ html
       ul(class='infomation')
         li(class='news') 
           p 2020-06-21    当サイトを公開しました
+          p 2020-07-06    発売情報を更新しました
 
       footer
         p(id='copy')

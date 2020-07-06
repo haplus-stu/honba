@@ -5,10 +5,10 @@ from bs4 import BeautifulSoup
 import time
 import csv
 
-chrome_path = '/usr/bin/chromium-browser'
-chromedriver_path = '/usr/lib/chromium/chromedriver'
+chrome_path = '/usr/bin/google-chrome'
+chromedriver_path = '/usr/local/bin/chromedriver'
 o = Options()
-o.binary_location = '/usr/bin/chromium-browser'
+o.binary_location = '/usr/bin/google-chrome'
 o.add_argument('--headless')
 o.add_argument('--disable-gpu')
 o.add_argument('--no-sandbox')
@@ -29,8 +29,8 @@ html = d.page_source
 soup = BeautifulSoup(html,"html.parser")
 
 f = open("output.csv","w")
-date_f = open("../data/Comic/output_date.csv","w")
-link_f = open("../data/Comic/output_link.csv","w")
+date_f = open("/data/Comic/output_date.csv","w")
+link_f = open("/data/Comic/output_link.csv","w")
 
 
 title_list = []
