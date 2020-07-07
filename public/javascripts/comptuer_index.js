@@ -67,7 +67,7 @@ function disp_html() {
     tb.appendChild(title_th);
     tb.appendChild(date_th);
     var title = document.getElementById('section_title');
-    title.innerHTML = date.getFullYear() + '年' + (date.getMonth() + 1) + '月のコミック新刊一覧';
+    title.innerHTML = date.getFullYear() + '年' + (date.getMonth() + 1) + '月のコンピュータ・IT新刊一覧';
     for (var i = 0; i < all_data_of_book.length; i++) {
         var row = tb.insertRow(-1);
         var cell = row.insertCell(-1);
